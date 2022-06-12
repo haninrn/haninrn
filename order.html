@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type = "text/css" href="style.css"/>
+	<title>Order a Sambal</title>
+	
+
+	</head>
+	
+	<body background = "wallpaper.jpg" >
+	<div class="bg">
+	<nav>
+		<a href="sambals.html">
+		<img src="cili logo.png" alt="HTML tutorial" style="width:100px;" align= 'left'>
+		</a>
+		<div class="logo">
+			<h3>Sambal Crispy Chipz</h3>
+		</div>
+			<ul class="nav-links">
+				<li>
+					<a href = "index.html">Home</a>
+				</li>
+				<li>
+					<a href = "sambals.html">Products</a>
+				</li>
+				<li>
+					<a href = "media.html">Media</a
+				</li>
+				<li>
+					<a href = "order.html">Order</a>
+				</li>
+			</ul>
+	
+	</nav>
+<script>
+
+function validateForm() {
+
+  var x = document.forms["myform"]["name"].value;
+  var y = document.forms["myform"]["number"].value;
+  
+  if (x == "" || x == null) {
+    alert("Name must be filled out");
+    return false;
+  }
+  else if (y == "" || y == null) {
+    alert("Number must be filled out");
+    return false;
+	}
+	
+	else if (x != "" || y != null) {
+    alert("Thank you for your order!");
+	return false;
+	}
+
+}
+
+</script>
+
+<div id="form">
+<form name = 'myform' method='GET' action="main.html" onsubmit='return validateForm()'>
+<h3>Order Your Sambal Crispy Chipz Now!</h3>
+<br><br>
+
+Name:<br>
+	<input type='text' name="name" size='50' placeholder = "Your Name"><br><br>
+Phone Number:<br>
+	<input type='text' name='number' size='50' placeholder = "Your Number"><br>
+
+
+
+<p>Please choose your desired Sambal:
+	<select name='age'>
+		<option>Sambal Ikan Bilis
+		<option>Sambal Crispy Chipz
+		<option>Sambal Crispy Tempe
+		<option>Jumbo Sambal 3-in-1
+	</select>
+	
+	<p>Size:
+<br>
+	<input type='radio' name='size' >200 gram (RM 6)
+	<br><br>
+	<input type='radio' name='size' >500 gram (RM10)
+	<br><br>
+
+
+<p> Add-Ons:
+<br><br>
+	<input type='checkbox'name='add' unchecked>Sambal
+	<br>
+	<input type='checkbox'name='add' unchecked>Ikan Bilis
+	<br>
+	<input type='checkbox'name='add' unchecked>Crispy Chipz
+	<br>
+	<input type='checkbox'name='add' unchecked>Crispy Tempe
+	<br>
+
+<br><p> Extra notes for a perfect Sambal:
+<br>
+	<textarea name='notes' rows='4' cols='40' placeholder= "Example: -less spicy"></textarea>
+
+<p>
+	<input type='submit' name='submit' value='Submit'>
+	<input type='reset' name='reset' value='Reset'>
+	
+</form>
+	</div>
+	</div>
+	</body>
+
+</html>

@@ -1,0 +1,172 @@
+*{
+	padding: 0px;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+nav{
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	min-height: 8vh;
+	font-family: 'Merienda', cursive;
+	background-color: #FFECD0
+	
+}
+
+.logo{
+	color: #D54040;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+
+.nav-links{
+	display: flex; 
+	justify-content: space-around;
+	width: 35%;
+	
+}
+
+.nav-links li{
+	list-style:none;
+}
+.nav-links a{
+	color: #D54040;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+	
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+
+#container{
+	font-family: 'Merienda', cursive;
+	background-color: #DBEAD9;
+	margin-top: 50px;
+	border: 5px solid #B3CFAF;
+	text-align:center;
+	padding: 50px 0;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+form{
+	border-radius: 5px;
+	width: 100%;
+	position: absolute;
+	width: 400px;
+	height: cover;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -200px;
+	background-color: #B3CFAF;
+	padding-left: 25px;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.bg {
+  background-image: url("wallpaper.jpg");
+
+  height: 1000px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.socmed{
+	position: absolute;
+    bottom: 0px;
+	text-align:center;
+	margin-left:200px;
+}
+
+table, th, td {
+  border: 2px solid white;
+  border-collapse: collapse;
+  margin-top: 50px;
+  text-align: center;
+}
+th, td {
+  background-color: #B3CFAF;
+}
+
+#video{
+	text-align: center;
+	padding-top: 50px;
+}
+
+.footer{
+	text-align: center;
+	padding-top: 50px;
+}
